@@ -1,0 +1,38 @@
+.main-view{  
+    min-height: 100vh;  
+      
+}  
+.pages{  
+    padding-top: 54px;  
+}  
+.quick-menu{
+	position:fixed;
+	bottom:50%;
+	right:20px;
+	width:100px;
+	height:20%;
+	display: block;
+	
+	.float{
+		
+		position:absolute;
+		width:60px;
+		height:60px;
+		// bottom:40px;
+		right:0px;
+		background-color:#0C9;
+		color:#FFF;
+		border-radius:50px;
+		text-align:center;
+		box-shadow: 2px 2px 3px #999;
+		margin-bottom: 10px;
+		&:nth-child(1) { top: 0px; }
+		&:nth-child(2) { top: 80px; }
+		&:nth-child(3) { top: 160px; }
+		&:nth-child(4) { top: 240px; }
+	}
+	
+	.my-float{
+		margin-top:22px;
+	}
+}

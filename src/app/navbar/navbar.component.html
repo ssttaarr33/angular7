@@ -1,0 +1,73 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" routerLink="/portfolio">Page 1 <span class="sr-only">(current)</span></a>
+    </div>
+  </div>
+</nav> -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">CofaceLogo</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="navbar-nav mr-auto">
+      <div [ngbCollapse]="isNavbarCollapsed" class="nav-item dropdown" id="navbarsDefault">
+        <ul class="navbar-nav ">
+          <li class="nav-item dropdown" ngbDropdown>
+            <a class="nav-link dropdown-toggle" id="id01" ngbDropdownToggle>Risk</a>
+            <div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
+              <a class="dropdown-item" routerLink="/portfolio">Pending</a>
+              <a class="dropdown-item">Risk</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div [ngbCollapse]="isNavbarCollapsed" class="nav-item dropdown" id="navbarsDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown" ngbDropdown>
+            <a class="nav-link dropdown-toggle" id="id01" ngbDropdownToggle>Overdues</a>
+            <div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
+              <a class="dropdown-item" routerLink="/portfolio">Overdues</a>
+              <a class="dropdown-item" routerLink="/portfolio">Indedmnities</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div [ngbCollapse]="isNavbarCollapsed" class="nav-item dropdown" id="navbarsDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown" ngbDropdown>
+            <a class="nav-link dropdown-toggle" id="id01" ngbDropdownToggle>Tools</a>
+            <div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
+              <a class="dropdown-item" routerLink="/portfolio">Overdues</a>
+              <a class="dropdown-item" routerLink="/portfolio">Indedmnities</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div [ngbCollapse]="isNavbarCollapsed" class="nav-item dropdown" id="navbarsDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown" ngbDropdown>
+            <a class="nav-link dropdown-toggle" id="id01" ngbDropdownToggle>Settings</a>
+            <div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
+              <a class="dropdown-item" routerLink="/portfolio">Overdues</a>
+              <a class="dropdown-item" routerLink="/portfolio">Indedmnities</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <input class="form-control col-10" type="search" placeholder="Company search" aria-label="Search">
+    </div>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Contract switch" aria-label="Search">
+      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Logout</button>
+    </form>
+  </div>
+</nav>
